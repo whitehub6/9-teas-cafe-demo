@@ -251,27 +251,17 @@ body {
   align-items: center;
 }
 
-.hero-brand-highlight {
+.hero-tagline {
   font-family: var(--font-serif);
-  font-size: 6rem;
-  letter-spacing: 12px;
-  font-weight: 700;
-  color: #FAF9F6;
-  margin-bottom: 1.5rem;
-  border-bottom: 1px solid rgba(250, 249, 246, 0.15);
-  padding-bottom: 1rem;
-  width: fit-content;
-}
-
-.teas-section__intro-left h3 {
-  font-family: var(--font-serif);
-  font-size: 2.75rem;
+  font-size: 3.8rem;
   font-weight: 400;
-  line-height: 1.1;
-  margin-bottom: 1.5rem;
+  line-height: 1.15;
+  margin-bottom: 1.75rem;
+  color: #FAF9F6;
+  letter-spacing: 1px;
 }
 
-.teas-section__intro-left h3 span {
+.hero-tagline span {
   display: block;
   font-style: italic;
   font-family: var(--font-serif);
@@ -1352,8 +1342,8 @@ input:focus, select:focus, textarea:focus {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
-  .hero-brand-highlight {
-    font-size: 4.5rem;
+  .hero-tagline {
+    font-size: 3.2rem;
   }
   .checkout-modal-content {
     padding: 2rem;
@@ -1394,9 +1384,8 @@ input:focus, select:focus, textarea:focus {
     font-size: 2.25rem;
   }
 
-  .hero-brand-highlight {
-    font-size: 3.5rem;
-    letter-spacing: 8px;
+  .hero-tagline {
+    font-size: 2.4rem;
   }
 
   .featured-grid {
