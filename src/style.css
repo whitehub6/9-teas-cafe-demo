@@ -651,10 +651,10 @@ body {
 }
 
 /* Beverages Section */
-.teas-menu--two-column {
+.teas-menu--three-column {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 4rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
   margin-bottom: 4rem;
 }
 
@@ -1432,7 +1432,7 @@ input:focus, select:focus, textarea:focus {
     text-align: center;
   }
 
-  .teas-menu--two-column,
+  .teas-menu--three-column,
   .teas-menu--two-column-odd {
     grid-template-columns: 1fr;
     gap: 3rem;
