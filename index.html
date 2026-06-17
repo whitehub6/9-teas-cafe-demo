@@ -73,17 +73,17 @@
         <h5 class="section-heading-serif reveal">Specials</h5>
         
         <div class="featured-grid">
-          <!-- Item 1: Paneer Chilly Pizza -->
+          <!-- Item 1: Cafe Special Combo -->
           <div class="featured-card reveal">
             <div class="featured-card__image-wrapper">
-              <img src="/paneer_pizza.jpg" alt="Paneer Chilly Pizza" class="featured-img">
+              <img src="/paneer_pizza.jpg" alt="Cafe Special Combo" class="featured-img">
             </div>
             <div class="featured-card__content">
-              <h3>Paneer Chilly Pizza</h3>
-              <p>A fusion favorite. Freshly baked thin-crust pizza loaded with spiced, wok-tossed paneer chunks, bell peppers, and cheese.</p>
+              <h3>Cafe Special Combo</h3>
+              <p>Our grand cafe platter featuring a plate of hot, cheesy Italian macaroni pasta, freshly baked green pepper pizza, and a classic milk cooler.</p>
               <div class="featured-footer">
-                <span class="featured-price">₹180</span>
-                <button class="btn-add-to-cart" data-id="sig-paneer-pizza" data-name="Paneer Chilly Pizza" data-price="180">+ Add</button>
+                <span class="featured-price">₹240</span>
+                <button class="btn-add-to-cart" data-id="sig-special-combo" data-name="Cafe Special Combo" data-price="240">+ Add</button>
               </div>
             </div>
           </div>
@@ -103,17 +103,17 @@
             </div>
           </div>
 
-          <!-- Item 3: Cold Chocolate Coffee -->
+          <!-- Item 3: Chocolate Vanilla Vibe -->
           <div class="featured-card reveal">
             <div class="featured-card__image-wrapper">
-              <img src="/cold_coffee.jpg" alt="Cold Chocolate Coffee" class="featured-img">
+              <img src="/cold_coffee.jpg" alt="Chocolate Vanilla Vibe" class="featured-img">
             </div>
             <div class="featured-card__content">
-              <h3>Cold Chocolate Coffee</h3>
-              <p>Smooth, rich espresso blended with premium dark chocolate syrup, chilled milk, and topped with chocolate powder.</p>
+              <h3>Chocolate Vanilla Vibe</h3>
+              <p>Rich chocolate cold coffee blended thick and served with a generous scoop of premium vanilla ice cream.</p>
               <div class="featured-footer">
                 <span class="featured-price">₹120</span>
-                <button class="btn-add-to-cart" data-id="sig-cold-coffee" data-name="Cold Chocolate Coffee" data-price="120">+ Add</button>
+                <button class="btn-add-to-cart" data-id="sig-choc-vanilla" data-name="Chocolate Vanilla Vibe" data-price="120">+ Add</button>
               </div>
             </div>
           </div>
@@ -292,7 +292,10 @@
     <!-- Beverages Section (Three Columns to represent cold coffee, milkshake, mocktails from shared menu) -->
     <section id="beverages" class="teas-section teas-section__beverages">
       <div class="teas-section__inner">
-        <h5 class="section-heading-serif reveal">Drinks</h5>
+        <div class="reveal" style="text-align: center; margin-bottom: 3.5rem;">
+          <h5 class="section-heading-serif" style="margin-bottom: 1rem;">Drinks</h5>
+          <button class="btn-view-menu-card" id="btnViewMenuCard">View Original Menu Card</button>
+        </div>
         
         <div class="teas-menu--three-column reveal">
           <!-- Cool Classics (Cold Coffee) -->
@@ -323,13 +326,33 @@
               </li>
               <li>
                 <div class="menu-item-header">
+                  <span class="menu-item-name">Break Toh Banta (Kit-Kat)</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-coffee-kitkat" data-name="Break Toh Banta (Kit-Kat Coffee)" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Cold coffee blended with original Kit-Kat chocolate bars and fudge syrup.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Oreo On The Rocks</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-coffee-oreo" data-name="Oreo On The Rocks" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Chilled coffee blended with crunchy Oreo bits, milk, and chocolate flakes.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
                   <span class="menu-item-name">Indian Style Affagato</span>
                   <span class="menu-item-price-wrapper">
                     <span class="menu-item-price">₹99</span>
                     <button class="btn-add-to-cart-small" data-id="bev-affagato" data-name="Indian Style Affagato" data-price="99">+</button>
                   </span>
                 </div>
-                <p class="menu-item-desc">A bold shot of espresso poured over a scoop of premium vanilla ice cream.</p>
+                <p class="menu-item-desc">Rich cold coffee served with a generous scoop of vanilla ice cream.</p>
               </li>
               <li>
                 <div class="menu-item-header">
@@ -339,7 +362,7 @@
                     <button class="btn-add-to-cart-small" data-id="bev-choc-vanilla" data-name="Chocolate Vanilla Vibe" data-price="120">+</button>
                   </span>
                 </div>
-                <p class="menu-item-desc">Cold chocolate coffee served with a generous scoop of vanilla ice cream.</p>
+                <p class="menu-item-desc">Chocolate cold coffee served with a generous scoop of vanilla ice cream.</p>
               </li>
             </ul>
           </div>
@@ -378,7 +401,57 @@
                     <button class="btn-add-to-cart-small" data-id="bev-oreo-pitara" data-name="Oreo Ka Pitara" data-price="99">+</button>
                   </span>
                 </div>
-                <p class="menu-item-desc">Thick, creamy milkshake blended with vanilla ice cream and loaded with Oreo cookies.</p>
+                <p class="menu-item-desc">Thick milkshake blended with vanilla ice cream and loaded with Oreo cookies.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Break Toh Banta (Kit-Kat)</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-shake-kitkat" data-name="Break Toh Banta (Kit-Kat Shake)" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Delicious milkshake blended with premium Kit-Kat chocolate chunks.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Gulabi Gulzar (Rose)</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-rose-shake" data-name="Gulabi Gulzar (Rose Milkshake)" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">A fragrant sweet rose petal syrup milkshake topped with dry fruits.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Berrilicious (Strawberry)</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-strawberry-shake" data-name="Berrilicious (Strawberry)" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Creamy milkshake loaded with sweet strawberry puree and milk solids.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Nostalgia Combo</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹120</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-nostalgia-combo" data-name="Nostalgia Combo (Kit-Kat & Oreo)" data-price="120">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">The ultimate double chocolate shake featuring Oreo and Kit-Kat blend.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Tropical Throwback</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹120</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-pinacolada-shake" data-name="Tropical Throwback (Pinacolada)" data-price="120">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">A refreshing tropical mocktail-shake style blend of coconut and pineapple.</p>
               </li>
               <li>
                 <div class="menu-item-header">
@@ -401,6 +474,16 @@
             <ul class="teas-menu__list">
               <li>
                 <div class="menu-item-header">
+                  <span class="menu-item-name">Coca Cola (250ml)</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹35</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-coke-250" data-name="Thanda Bole Toh Coca Cola (250ml)" data-price="35">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Chilled refreshing classic Coca-Cola carbonated drink.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
                   <span class="menu-item-name">Mint Magic Mojito</span>
                   <span class="menu-item-price-wrapper">
                     <span class="menu-item-price">₹90</span>
@@ -411,13 +494,23 @@
               </li>
               <li>
                 <div class="menu-item-header">
-                  <span class="menu-item-name">Desi Summer Sip</span>
+                  <span class="menu-item-name">Desi Summer Sip (Ice Tea)</span>
                   <span class="menu-item-price-wrapper">
                     <span class="menu-item-price">₹90</span>
                     <button class="btn-add-to-cart-small" data-id="bev-summer-sip" data-name="Desi Summer Sip (Ice Tea)" data-price="90">+</button>
                   </span>
                 </div>
                 <p class="menu-item-desc">Perfect summer refresher: classic chilled sweet lemon-infused black ice tea.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Melon Masti Mojito</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-melon-mojito" data-name="Melon Masti Mojito" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Sweet watermelon flavored fizzy mojito mocktail with mint and lime.</p>
               </li>
               <li>
                 <div class="menu-item-header">
@@ -431,10 +524,20 @@
               </li>
               <li>
                 <div class="menu-item-header">
-                  <span class="menu-item-name">90's Bijili Mojito</span>
+                  <span class="menu-item-name">Arabian Andaaz Mojito</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹99</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-arabian-mojito" data-name="Arabian Andaaz Mojito" data-price="99">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">A unique exotic Middle-Eastern fruit blend mojito mocktail.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">90's Bijili Mojito (Thunder)</span>
                   <span class="menu-item-price-wrapper">
                     <span class="menu-item-price">₹120</span>
-                    <button class="btn-add-to-cart-small" data-id="bev-bijili-mojito" data-name="90's Bijili Mojito" data-price="120">+</button>
+                    <button class="btn-add-to-cart-small" data-id="bev-bijili-mojito" data-name="90's Bijili Mojito (Thunder)" data-price="120">+</button>
                   </span>
                 </div>
                 <p class="menu-item-desc">A thunderous, colorful fizzy mocktail made with unique house fruit syrups.</p>
@@ -573,6 +676,14 @@
             <!-- Receipt injected dynamically by JS -->
           </div>
         </div>
+      </div>
+    </div>
+
+    <!-- Menu Card Modal -->
+    <div class="menu-modal-backdrop" id="menuCardModal">
+      <div class="menu-modal-content">
+        <button class="btn-close-menu-modal" id="closeMenuModal" aria-label="Close Menu">&times;</button>
+        <img src="/teas_menu.png" alt="9 Tea's Cafe Drinks Menu Card" class="menu-card-lightbox-img">
       </div>
     </div>
 

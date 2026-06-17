@@ -185,6 +185,31 @@ function toggleCheckoutModal(show = true) {
 if (checkoutBtn) checkoutBtn.addEventListener('click', () => toggleCheckoutModal(true));
 if (closeCheckout) closeCheckout.addEventListener('click', () => toggleCheckoutModal(false));
 
+// Menu Card Lightbox Modal Toggles
+const btnViewMenuCard = document.getElementById('btnViewMenuCard');
+const closeMenuModal = document.getElementById('closeMenuModal');
+const menuCardModal = document.getElementById('menuCardModal');
+
+function toggleMenuCardModal(show = true) {
+  if (menuCardModal) {
+    if (show) {
+      menuCardModal.classList.add('show');
+    } else {
+      menuCardModal.classList.remove('show');
+    }
+  }
+}
+
+if (btnViewMenuCard) btnViewMenuCard.addEventListener('click', () => toggleMenuCardModal(true));
+if (closeMenuModal) closeMenuModal.addEventListener('click', () => toggleMenuCardModal(false));
+if (menuCardModal) {
+  menuCardModal.addEventListener('click', (e) => {
+    if (e.target === menuCardModal) {
+      toggleMenuCardModal(false);
+    }
+  });
+}
+
 // Toggle Address field based on pickup/delivery select
 const orderOption = document.getElementById('orderOption');
 const deliveryAddressGroup = document.getElementById('deliveryAddressGroup');
