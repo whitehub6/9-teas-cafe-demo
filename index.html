@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link class="favicon" rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>9 TEA'S CAFE | Chai, Conversations & Bites, Bhayandar</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Header/Logo Area -->
+    <header class="teas-header">
+      <div class="teas-header__inner">
+        <div class="teas-header__logo-container">
+          <a href="/" class="teas-logo">9 TEA'S</a>
+          <span class="teas-logo__subtitle">CAFE &middot; BHAYANDAR</span>
+        </div>
+        <nav class="teas-nav">
+          <ul class="teas-nav__list">
+            <li><a href="#featured">Specials</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#beverages">Drinks</a></li>
+            <li>
+              <button class="cart-trigger-btn" id="cartTrigger" aria-label="Open Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="display: block; margin: 0;"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1="3" y1="6" x2="21" y2="6"></line><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
+                <span class="cart-badge" id="cartBadge">0</span>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Intro / About Section (Hero Banner with Background Text) -->
+    <section class="teas-section teas-section__intro has-bg">
+      <div class="teas-hero-overlay"></div>
+      <div class="teas-section__inner">
+        <div class="teas-section__intro-left reveal">
+          <h1 class="hero-brand-highlight">9 TEA'S</h1>
+          <h3>Chai,<span>Conversations & Bites</span></h3>
+          <p>
+            Established in 2019, 9 Tea's Cafe is Bhayandar's favorite youth hangout. We blend the warmth of freshly brewed traditional Indian teas and rich cold coffees with a delicious menu of fast-food favorites—from cheese-loaded pizzas and grilled sandwiches to sizzling hot snacks. It's more than a cafe; it's a cozy space where friends meet, ideas brew, and moments turn into memories.
+          </p>
+        </div>
+        <div class="teas-section__intro-right-spacer"></div>
+      </div>
+
+      <!-- Horizontal Info Bar at the bottom of Hero -->
+      <div class="teas-hero-infobar reveal">
+        <div class="infobar-item">
+          <span class="infobar-label">Timing</span>
+          <span class="infobar-value">Everyday &middot; 9:30 AM - 10:30 PM</span>
+        </div>
+        <div class="infobar-divider"></div>
+        <div class="infobar-item">
+          <span class="infobar-label">Contact</span>
+          <span class="infobar-value">+91 73040 64166 &middot; <a href="mailto:info@9teascafe.com" title="Email Cafe">info@9teascafe.com</a></span>
+        </div>
+        <div class="infobar-divider"></div>
+        <div class="infobar-item">
+          <span class="infobar-label">Instagram</span>
+          <span class="infobar-value"><a href="#" target="_blank" rel="noopener">@9teascafe</a></span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Signature Creations Grid -->
+    <section id="featured" class="teas-section teas-section__featured">
+      <div class="teas-section__inner">
+        <h5 class="section-heading-serif reveal">Specials</h5>
+        
+        <div class="featured-grid">
+          <!-- Item 1: Paneer Chilly Pizza -->
+          <div class="featured-card reveal">
+            <div class="featured-card__image-wrapper">
+              <!-- Placeholder styled box for images to be provided later -->
+              <div class="image-placeholder-box">
+                <span class="placeholder-icon">🍕</span>
+                <span class="placeholder-text">Image Space Reserved</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <h3>Paneer Chilly Pizza</h3>
+              <p>A fusion favorite. Freshly baked thin-crust pizza loaded with spiced, wok-tossed paneer chunks, bell peppers, and cheese.</p>
+              <div class="featured-footer">
+                <span class="featured-price">₹180</span>
+                <button class="btn-add-to-cart" data-id="sig-paneer-pizza" data-name="Paneer Chilly Pizza" data-price="180">+ Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Kulhad Pizza -->
+          <div class="featured-card reveal">
+            <div class="featured-card__image-wrapper">
+              <div class="image-placeholder-box">
+                <span class="placeholder-icon">🏺</span>
+                <span class="placeholder-text">Image Space Reserved</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <h3>Kulhad Pizza</h3>
+              <p>Baked in a traditional clay pot. Layers of sweet corn, chopped veggies, paneer, liquid cheese, and signature Italian sauces.</p>
+              <div class="featured-footer">
+                <span class="featured-price">₹150</span>
+                <button class="btn-add-to-cart" data-id="sig-kulhad-pizza" data-name="Kulhad Pizza" data-price="150">+ Add</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Cold Chocolate Coffee -->
+          <div class="featured-card reveal">
+            <div class="featured-card__image-wrapper">
+              <div class="image-placeholder-box">
+                <span class="placeholder-icon">☕</span>
+                <span class="placeholder-text">Image Space Reserved</span>
+              </div>
+            </div>
+            <div class="featured-card__content">
+              <h3>Cold Chocolate Coffee</h3>
+              <p>Smooth, rich espresso blended with premium dark chocolate syrup, chilled milk, and topped with chocolate powder.</p>
+              <div class="featured-footer">
+                <span class="featured-price">₹120</span>
+                <button class="btn-add-to-cart" data-id="sig-cold-coffee" data-name="Cold Chocolate Coffee" data-price="120">+ Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu Section (Split Menu columns containing tea items and snacks) -->
+    <section id="menu" class="teas-section teas-section__menu">
+      <div class="teas-section__inner">
+        <h5 class="section-heading-serif reveal">Menu</h5>
+        
+        <div class="teas-menu__dinner teas-menu reveal">
+          <div class="teas-menu__headers">
+            <h6>Aromatic Teas & Shakes</h6>
+            <h6>Fast Food & Bites</h6>
+          </div>
+          
+          <div class="teas-menu__list-container">
+            <!-- Left: Teas & Shakes -->
+            <ul class="teas-menu__list">
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Masala Chai</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹40</span>
+                    <button class="btn-add-to-cart-small" data-id="tea-masala" data-name="Masala Chai" data-price="40">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Freshly brewed milk tea infused with dry ginger, cardamom, cinnamon, and spices.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Elaichi Special Tea</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹45</span>
+                    <button class="btn-add-to-cart-small" data-id="tea-elaichi" data-name="Elaichi Special Tea" data-price="45">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Aromatic tea brewed slowly with crushed green cardamom pods and rich milk.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Tandoori Chai</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹60</span>
+                    <button class="btn-add-to-cart-small" data-id="tea-tandoori" data-name="Tandoori Chai" data-price="60">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Chai served in an earthen clay pot (kulhad) charred in a hot tandoor oven for a deep smoky flavor.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">KitKat Thick Shake</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹150</span>
+                    <button class="btn-add-to-cart-small" data-id="shake-kitkat" data-name="KitKat Thick Shake" data-price="150">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Thick, chocolatey shake blended with crispy KitKat bar chunks and vanilla gelato.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Oreo Madness Shake</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹140</span>
+                    <button class="btn-add-to-cart-small" data-id="shake-oreo" data-name="Oreo Madness Shake" data-price="140">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Rich vanilla milkshake blended with heaps of original crushed Oreo biscuits.</p>
+              </li>
+            </ul>
+
+            <!-- Right: Fast Food & Snacks -->
+            <ul class="teas-menu__list">
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Cheese Garlic Bread</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹130</span>
+                    <button class="btn-add-to-cart-small" data-id="food-garlic-bread" data-name="Cheese Garlic Bread" data-price="130">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Three crispy baguette slices spread with garlic butter, topped with herbs and melted cheese.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Paneer Cheese Sandwich</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹140</span>
+                    <button class="btn-add-to-cart-small" data-id="food-paneer-sandwich" data-name="Paneer Cheese Sandwich" data-price="140">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Grilled sandwich packed with shredded cottage cheese, house-spices, and liquid cheese spread.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Veg Cheese Burger</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹120</span>
+                    <button class="btn-add-to-cart-small" data-id="food-burger" data-name="Veg Cheese Burger" data-price="120">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Crispy mixed-vegetable patty layered with a slice of processed cheese, fresh tomatoes, and burger sauce.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">White Sauce Pasta</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹150</span>
+                    <button class="btn-add-to-cart-small" data-id="food-pasta-white" data-name="White Sauce Pasta" data-price="150">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Penne pasta tossed in a rich, buttery, and creamy white cheese sauce with sweet corn and bell peppers.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Cheese Masala Maggi</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹90</span>
+                    <button class="btn-add-to-cart-small" data-id="food-maggi" data-name="Cheese Masala Maggi" data-price="90">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Double packet noodles cooked in special spices, loaded with mixed vegetables and grated cheese.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Extra Row for fries/sides -->
+        <div class="teas-menu__extra-row reveal">
+          <div class="teas-menu__dessert teas-menu">
+            <div class="teas-menu__headers">
+              <h6>Fries & Sides</h6>
+            </div>
+            <ul class="teas-menu__list single-column">
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Peri Peri Mayo Fries</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹110</span>
+                    <button class="btn-add-to-cart-small" data-id="side-peri-fries" data-name="Peri Peri Mayo Fries" data-price="110">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Crispy golden fries tossed in hot peri-peri seasoning and drizzled with garlic mayo sauce.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Cheese Loaded Nachos</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹120</span>
+                    <button class="btn-add-to-cart-small" data-id="side-nachos" data-name="Cheese Loaded Nachos" data-price="120">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Tortilla chips loaded with liquid cheese, spicy Mexican salsa, and sliced olives.</p>
+              </li>
+            </ul>
+          </div>
+          
+          <div class="teas-menu__fondue teas-callout teas-menu has-image-badge">
+            <div class="custom-cake-card">
+              <!-- Placeholder for images to be provided later -->
+              <div class="image-placeholder-box circle">
+                <span class="placeholder-icon">🍔</span>
+              </div>
+              <div class="custom-cake-content">
+                <h3>Jain Menu Available!<span>Special Order</span></h3>
+                <p>We believe in custom cravings. We prepare Jain pizzas, sandwiches, and pastas separate from regular dishes. Please inform us of your dietary requirements when ordering.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Beverages Section -->
+    <section id="beverages" class="teas-section teas-section__beverages">
+      <div class="teas-section__inner">
+        <h5 class="section-heading-serif reveal">Drinks</h5>
+        
+        <div class="teas-menu--two-column reveal">
+          <!-- Refreshing Cold Coffees -->
+          <div class="teas-menu__category">
+            <div class="teas-menu__headers">
+              <h6>Cold Coffees</h6>
+            </div>
+            <ul class="teas-menu__list">
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Classic Cold Coffee</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹100</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-classic-coffee" data-name="Classic Cold Coffee" data-price="100">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Chilled, refreshing coffee blended thick with milk, sugar, and ice cream.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Chocolate Frappe</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹130</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-choc-frappe" data-name="Chocolate Frappe" data-price="130">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Rich espresso blended with dark chocolate chips, milk, and chocolate sauce.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Hot Beverages -->
+          <div class="teas-menu__category">
+            <div class="teas-menu__headers">
+              <h6>Hot Coffees & Milk</h6>
+            </div>
+            <ul class="teas-menu__list">
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Cappuccino</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹80</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-cappuccino" data-name="Cappuccino" data-price="80">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">Rich espresso shot with steamed milk and a thick layer of milk foam on top.</p>
+              </li>
+              <li>
+                <div class="menu-item-header">
+                  <span class="menu-item-name">Hot Chocolate Coffee</span>
+                  <span class="menu-item-price-wrapper">
+                    <span class="menu-item-price">₹110</span>
+                    <button class="btn-add-to-cart-small" data-id="bev-hot-choc-coffee" data-name="Hot Chocolate Coffee" data-price="110">+</button>
+                  </span>
+                </div>
+                <p class="menu-item-desc">A comforting mug of cocoa blended with a warm shot of espresso.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="teas-menu--two-column-odd reveal">
+          <!-- Left side: Diner Snacks Card -->
+          <div class="teas-menu__category">
+            <div class="teas-menu__headers">
+              <h6>Snacks Highlight</h6>
+            </div>
+            <div class="savory-card">
+              <!-- Placeholder for images to be provided later -->
+              <div class="image-placeholder-box rect">
+                <span class="placeholder-icon">🍟</span>
+                <span class="placeholder-text">Image Space Reserved (Fries & Snacks)</span>
+              </div>
+              <div class="savory-card-content">
+                <div class="savory-card-header">
+                  <p>Our snacks are seasoned to perfection and served piping hot. Grab our famous Cheese Nachos or Peri Peri Fries alongside your favorite cup of special Masala Chai.</p>
+                  <div class="savory-buttons">
+                    <button class="btn-add-to-cart-small" data-id="sav-peri" data-name="Peri Peri Fries Combo" data-price="130" title="Add Peri Peri Fries Combo (₹130)">+ Peri Peri Fries Combo (₹130)</button>
+                    <button class="btn-add-to-cart-small" data-id="sav-nachos" data-name="Loaded Nachos Combo" data-price="140" title="Add Loaded Nachos Combo (₹140)">+ Loaded Nachos Combo (₹140)</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Styled border-frame box indicating the full menu copy is downloadable/viewable -->
+          <div class="teas-menu-meta-box">
+            <h4>Menu Note</h4>
+            <p>Our prices are inclusive of GST. Customize your pizza crust to wheat base or add extra cheese in the special instructions at checkout.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer / Location & Booking Info -->
+    <footer id="contact" class="teas-footer">
+      <div class="teas-footer__inner">
+        <div class="footer-col brand-info">
+          <h2>9 TEA'S</h2>
+          <p>Bhayandar's premium tea-room and modern street-food diner experience since 2019.</p>
+        </div>
+        <div class="footer-col location-info">
+          <h3>Location</h3>
+          <p>Shop No. 1 & 2, Sundar Bhavan,<br>Opposite Navghar Police Station,<br>Bhayandar East, Thane, Maharashtra 401105</p>
+        </div>
+        <div class="footer-col hours-info">
+          <h3>Contact</h3>
+          <p>Phone: +91 73040 64166<br>Email: info@9teascafe.com</p>
+        </div>
+      </div>
+      <div class="footer-disclaimer">
+        <p>&copy; 2026 9 TEA'S CAFE. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Cart Drawer Sidebar -->
+    <div class="cart-backdrop" id="cartBackdrop"></div>
+    <div class="teas-cart-drawer" id="cartDrawer">
+      <div class="cart-drawer-header">
+        <h3>Your Cart</h3>
+        <button class="btn-close-drawer" id="closeCart" aria-label="Close Cart">&times;</button>
+      </div>
+      
+      <div class="cart-drawer-body">
+        <ul class="cart-items-list" id="cartItemsList">
+          <!-- Injected dynamically by JS -->
+          <li class="empty-cart-message">Your cart is currently empty.</li>
+        </ul>
+      </div>
+      
+      <div class="cart-drawer-footer">
+        <div class="cart-total-row">
+          <span>Subtotal</span>
+          <span class="total-amount" id="cartTotalAmount">₹0</span>
+        </div>
+        <button class="btn-checkout" id="checkoutBtn" disabled>Proceed to Checkout</button>
+      </div>
+    </div>
+
+    <!-- Checkout Modal -->
+    <div class="checkout-backdrop" id="checkoutModal">
+      <div class="checkout-modal-content">
+        <button class="btn-close-modal" id="closeCheckout" aria-label="Close Checkout">&times;</button>
+        
+        <div class="checkout-modal-body" id="checkoutModalBody">
+          <!-- Step 1: Form -->
+          <div class="checkout-form-step" id="checkoutFormStep">
+            <h3>Checkout</h3>
+            <form id="orderForm">
+              <div class="form-group">
+                <label for="orderName">Full Name</label>
+                <input type="text" id="orderName" required placeholder="e.g. Amit Yadav">
+              </div>
+              
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="orderPhone">Phone Number</label>
+                  <input type="tel" id="orderPhone" required placeholder="e.g. +91 73040 64166">
+                </div>
+                <div class="form-group">
+                  <label for="orderOption">Option</label>
+                  <select id="orderOption" required>
+                    <option value="delivery" selected>Home Delivery (Bhayandar East)</option>
+                    <option value="pickup">Self-Pickup at Cafe</option>
+                  </select>
+                </div>
+              </div>
+              
+              <div class="form-group" id="deliveryAddressGroup">
+                <label for="orderAddress">Delivery Address</label>
+                <textarea id="orderAddress" rows="3" required placeholder="Your address in Bhayandar East..."></textarea>
+              </div>
+              
+              <div class="form-group">
+                <label for="orderNotes">Special Instructions / Jain Prep Request</label>
+                <textarea id="orderNotes" rows="2" placeholder="e.g. Prepare Kulhad Pizza in Jain style, make fries extra spicy..."></textarea>
+              </div>
+              
+              <div class="checkout-summary-box">
+                <h4>Order Summary</h4>
+                <div class="summary-total-row">
+                  <span>Grand Total</span>
+                  <span id="checkoutTotalAmount">₹0</span>
+                </div>
+              </div>
+              
+              <button type="submit" class="btn-primary-diner btn-block">Place Order</button>
+            </form>
+          </div>
+
+          <!-- Step 2: Receipt (shown after placing order) -->
+          <div class="checkout-receipt-step" id="checkoutReceiptStep" style="display: none;">
+            <!-- Receipt injected dynamically by JS -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Notification Toast -->
+    <div class="teas-toast" id="teasToast">Item added to cart</div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
